@@ -1,0 +1,20 @@
+services:
+  db:
+    container_name: postgres-first-project
+    image: postgres:17.7
+    environment:
+      POSTGRES_USER: mukesh
+      POSTGRES_PASSWORD: 1324
+      PGDATA: /data/postgres
+    volumes:
+      - db:/data/postgres
+    ports:
+      - "5332:5432"
+    networks:
+      - db
+    restart: unless-stopped
+networks:
+  db:
+    driver: bridge
+volumes:
+  db:
