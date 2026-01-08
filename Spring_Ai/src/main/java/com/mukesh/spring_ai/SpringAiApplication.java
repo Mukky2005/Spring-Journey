@@ -1,4 +1,4 @@
-package com.mukesh.spring_ai;
+package com.mukesh.Spring_Ai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class SpringAiApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(SpringAiApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(SpringAiApplication.class, args);
+	}
 
 }
